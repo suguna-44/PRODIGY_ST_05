@@ -1,62 +1,45 @@
-# PRODIGY_ST_05
+# Task-05: Automated UI Tests for E-Commerce Checkout Flow
 
-# Automated UI Testing for E-Commerce Checkout Flow
+## 🎯 Objective
 
-## Objective
-This project automates the "Add to Cart" functionality of an e-commerce website using Selenium WebDriver with Java. It verifies that a product can be added successfully and that the cart count is updated.
+Automate the checkout process on the ShopLane demo e-commerce website using Selenium WebDriver with Java.
 
-## Tools & Technologies
+The automation covers product selection, cart navigation, checkout form validation, and page navigation testing.
+
+## 🔎 Scope
+
+- Open ShopLane demo website
+- Open a product details page
+- Attempt to add product to cart
+- Navigate to the checkout page
+- Fill checkout form (Name, Email, Address, Payment)
+- Verify form validation messages
+- Verify page transitions
+- Document automation results
+
+## ⚙️ Tools Used
+
 - Java
 - Selenium WebDriver
 - Maven
-- ChromeDriver
-- VS Code
+- Google Chrome
+- Visual Studio Code
+- Markdown Documentation
 
-## Website Tested
-https://shoplane-by-lassie.netlify.app/
+## 📂 Deliverables
 
-## Test Case Executed
+- `README.md` → Project overview
+- `TEST_CASES.md` → Detailed test cases
+- `docs/notes.md` → Setup and approach
+- `docs/report.md` → Test execution report
+- `docs/issues.md` → Known issues
+- `src/main/java/com/prodigy/CheckoutTest.java` → Selenium automation script
+- `pom.xml` → Maven configuration
 
-### TC_01 – Add Item to Cart
+---
 
-**Description:**
-Verify that a user can add a product to the shopping cart.
+**Demo Website:** https://shoplane-by-lassie.netlify.app/
 
-**Test Steps:**
-1. Launch the ShopLane website.
-2. Open the first product.
-3. Click the **Add to Cart** button.
-4. Verify the cart badge count changes from **0** to **1**.
+**Internship:** Prodigy InfoTech
 
-**Expected Result:**
-The selected product should be added to the cart successfully.
-
-**Actual Result:**
-The product was added successfully, and the cart badge updated to **1**.
-
-**Status:**
-✅ PASS
-
-## Project Structure
-
-```
-PRODIGY_ST_05/
-│── src/
-│   └── main/
-│       └── java/
-│           └── com/
-│               └── prodigy/
-│                   └── AddToCartTest.java
-│── pom.xml
-│── README.md
-```
-
-## Output
-- Website launched successfully.
-- Product page opened.
-- Product added to cart.
-- Cart badge updated from **0** to **1**.
-- Test executed successfully.
-
-## Author
-**Suguna**
+**Intern:** Suguna
