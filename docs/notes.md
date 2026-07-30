@@ -1,26 +1,37 @@
-# Report
+# Notes
 
-## Summary
+## Setup
 
-- Automated checkout flow was implemented using Selenium WebDriver and Java.
-- Successfully automated page navigation and checkout form interaction.
-- Verified checkout form validation for empty fields.
-- Verified page transitions between Home, Product Details, Cart, and Checkout pages.
-- The ShopLane demo site has a limitation where the **Add to Cart** button is disabled for some products, so the cart count may remain **0**.
-- Due to this website limitation, complete checkout and purchase confirmation could not be fully automated.
+- Used Selenium WebDriver with Java.
+- Used Maven for dependency management.
+- Used Google Chrome and ChromeDriver.
+- Target demo site: https://shoplane-by-lassie.netlify.app/
+- Automated product navigation, cart interaction, checkout form, and page transitions.
 
-## Recommendation
+## Approach
 
-- Replace `Thread.sleep()` with WebDriverWait for better stability.
-- Improve element locators using stable IDs or CSS selectors.
-- Use a fully functional demo e-commerce website for complete checkout automation.
-- Continue monitoring UI responsiveness and validation behavior.
+1. Launch the ShopLane demo website.
+2. Open a product details page.
+3. Attempt to add the product to the cart.
+4. Navigate to the cart and checkout page.
+5. Verify form validation with empty fields.
+6. Fill the checkout form with valid data.
+7. Verify page transitions and overall application behavior.
+8. Close the browser after execution.
 
-## Output
+## Environment
 
-- **Home Page:** Loaded successfully.
-- **Product Details:** Opened successfully.
-- **Add to Cart:** Button detected, but demo site prevented item from being added to the cart.
-- **Checkout Form Validation:** Validation messages displayed correctly when fields were empty.
-- **Page Transitions:** Navigation between pages worked correctly.
-- **Overall Result:** Automation script executed successfully, but complete checkout was limited by the demo website functionality rather than the Selenium script.
+- Language: Java
+- Automation Tool: Selenium WebDriver
+- Build Tool: Maven
+- IDE: Visual Studio Code
+- Browser: Google Chrome
+- Operating System: Windows 10/11
+
+## Observation
+
+- The application pages loaded successfully.
+- Product pages opened correctly.
+- Form validation messages worked as expected.
+- The demo website has limitations with the **Add to Cart** feature, so complete checkout may not always be possible.
+- The Selenium automation script executed successfully.
